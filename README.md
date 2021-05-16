@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+Engineering Internship Kata
+=================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Beam is an exciting company, founded on the idea that everyone deserves access to dental care. As such, we want to share this vision in a presentable and exciting way!
+This kata involves bringing a marketing site from a mock up to reality.
 
-## Available Scripts
 
-In the project directory, you can run:
+Instructions
+------------
+Please read through the user stories below and implement the functionality to complete them according to their requirements. The code design is entirely up to you as long as the solution can be run with npm or yarn start/opening an HTML file.
 
-### `npm start`
+As there are often trade offs when crafting a solution, the following is the priority of what we are considering when reviewing your kata:
+- Functionality - Does it fulfill the requirements and work correctly?
+- Style - Does the solution adhere to the mock up?
+- Responsiveness - Does the solution respond appropriately across browsers and across screen sizes?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please add a section explaining the technical and style decisions involved in designing your solution. What options were you considering at various levels (eg. breakpoint choices, layout choices, and design, as applicable) and what were the tradeoffs in choosing one option over another? Feel free to include this section here in this README.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Resources to get you started:
 
-### `npm test`
+- [Figma Mockup](https://www.figma.com/proto/ZN9GQfR0wSgf6jGALBb0uM/Web-Dev-Kata?node-id=1%3A2&scaling=min-zoom)
+    - Note: If you don't have a Figma account, one would need to be created in order to get the editor view
+- [How to export assets from Figma](https://help.figma.com/hc/en-us/articles/360040514533-Export-to-PNG-JPG-SVG-or-PDF-with-Export-Settings)
+- For a guide to working with oEmbed + Vimeo videos, [check out this link]('https://developer.vimeo.com/api/oembed/videos'). Alternatively, you can [visit this link](https://vimeo.com/api/oembed.json?url=https://vimeo.com/327864855) for metadata to help with embedding the marketing video referenced in this guide.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Submitting your work to Beam
+----------------------------
+Please include a .nvmrc file with your submission so we know version of node you are using. There are differences between versions that can be significant to your application's runtime versus your reviewer's installed node version.
 
-### `npm run build`
+Once you're happy with your submission, you can send it back in one of two formats; either as a git bundle or a zip file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To create the git bundle simply execute:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+cd engineering-internship-kata
+git bundle create engineering-internship-kata.bundle <YOUR BRANCH NAME HERE>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This will create a .bundle file which contains the entire git repository in binary form, so you can easily send it as an attachment. Alternatively, you could zip the project instead.
 
-### `npm run eject`
+To ensure that our review of your kata remains as unbiased as possible, your submission will be anonymized before it is reviewed. To help us with this process, please double check that any personally identifiable information, such as your name or email address, is removed from your code, readme or any commit messages. Your author and committer information will be scrubbed by our anonymizing process.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+High Level Scope
+--------------------
+At a high level, this kata should accomplish the following:
+* Page Layout as close as possible to the one provided in the mock up
+* Page should use semantic HTML
+* Provide a responsive design depending on screen size (desktop and mobile)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+User Stories
+--------------
+**Page Layout**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_As a Marketing Executive_<br>
+_In order to promote Beam's Mission_<br>
+_I want to view Beam's Mission and Vision page_<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Acceptance Criteria**
+* Create a cross-browser supported (Chrome, Safari, Edge) layout as close to the mock up as possible
+* Leadership links and images should leverage the JSON Noted below
+* Other links can behave as links but do not need to go anywhere
+* Ensure the hover effect is performed over each leadership team member
+* Provide a responsive design depending on screen size (desktop and mobile)
+ 
+ <br>
 
-## Learn More
+***Responsive Design***
+_As a Marketing Executive_<br>
+_In order to increase user friendless and broaden our impact_<br>
+_I want the marketing page to be responsive_<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We have intentionally left out a responsive design layout from the mock up. This is an opportunity for us to see how you could implement a responsive design, given the desktop specs version.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Acceptance Criteria**
 
-### Code Splitting
+* Page is responsive for both desktop and mobile
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+***The Marketing API***
 
-### Analyzing the Bundle Size
+Please read the user story on the next page and implement the functionality to complete them according to their requirements.
+Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Figma Mockup https://www.figma.com/proto/ZN9GQfR0wSgf6jGALBb0uM/Web-Dev-Kata?node-id=1%3A2&scaling=min-zoom
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+***User Story***
 
-### Advanced Configuration
+***Load Leadership Team from an API***
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+As a Marketing Executive I want to view the leadership team dynamically So that there’s not a code change required when changes in leadership occur
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+***Scope***
 
-### `npm run build` fails to minify
+Replace the statically loaded leadership with leadership that comes from the following API: https://beamtech.github.io/marketing-kata-html/leadership-team.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
