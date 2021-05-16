@@ -54,7 +54,8 @@ const Leadership = (props) => {
 
   return (
     <section>
-      <h3>Leadership section</h3>
+      <h1>Our Leadership Team</h1>
+      <div className="rect"></div>
       <div className="card_container">
         {leadersJSON}
       </div>

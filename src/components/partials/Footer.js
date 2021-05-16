@@ -1,7 +1,7 @@
 const Footer = (props) => {
   return (
     <footer>
-      <h3>Footer Logo Image</h3>
+      <img src='/img/Footer Logo.png' alt='footer logo' />
       <ul>
         <h3>Explore</h3>
         <li>I'm a Broker</li>

@@ -6,7 +6,6 @@ import Investors from '../sections/Investors'
 const Home = (props) => {
   return (
     <div>
-      <h1>Home section</h1>
       <Intro />
       <Mission />
       <Leadership />

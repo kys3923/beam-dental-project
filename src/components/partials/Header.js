@@ -1,7 +1,7 @@
 const Header = (props) => {
   return (
     <header>
-      <h3>Logo Image</h3>
+      <img src='/img/Logo.png' alt='header logo' />
       <ul>
         {/* click to hover */}
         <li>Explore</li>
