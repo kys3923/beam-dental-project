@@ -1,3 +1,91 @@
-.App {
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  transition: all .5s ease;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.body {
+  min-width: 400px;
+  width: auto;
+}
+
+/* Header.js */
+
+header {
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav {
+  width: 65%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  color: #666666;
+}
+
+.header_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#down_arrow {
+  position: relative;
+  top: 4px;
+}
+
+#find_dent_wrap {
+  width: 177px;
+  height: 38px;
+  border-radius: 38px;
   text-align: center;
+  line-height: 38px;
+  position: relative;
+  place-items: center;
+  padding: 1px;
+  background: linear-gradient(to right, #03C8EF, #028ED2);
+  margin-right: 15px;
+}
+
+.find_dent {
+  background-color: #FFF;
+  width: 175px;
+  height: 36px;
+  border-radius: 36px;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  color: #666666;
+}
+
+#login_box{
+  width: 177px;
+  height: 38px;
+  border-radius: 38px;
+  text-align: center;
+  line-height: 38px;
+  background: linear-gradient(to right, #03C8EF, #028ED2);
+  color: #FFF;
 }
