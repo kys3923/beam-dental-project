@@ -40,10 +40,11 @@ const Leadership = (props) => {
     :
     leaders.map((card, i) => {
       let name = `${card.name}`
-      let url = `${card.url}`
+      // let url = `${card.url}`
       let title = `${card.title}`
       let image = `${card.image}`
       return (
+        // add link to linkedIn urls
         <div className="leadership_card" key={i}>
           <img src={image} alt="profile"/>
           <h3>{name}</h3>
@@ -53,9 +54,11 @@ const Leadership = (props) => {
     })
 
   return (
-    <section>
-      <h1>Our Leadership Team</h1>
-      <div className="rect"></div>
+    <section className="mission_container">
+      <div className="mission_textbox">
+        <h1>Our Leadership Team</h1>
+        <div className="rect"></div>
+      </div>
       <div className="card_container">
         {leadersJSON}
       </div>
