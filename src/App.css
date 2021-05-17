@@ -89,3 +89,113 @@ header nav ul li {
   background: linear-gradient(to right, #03C8EF, #028ED2);
   color: #FFF;
 }
+
+/* Intro.js */
+
+.intro_container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grad_background {
+  display: block;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  z-index: 0;
+}
+
+.intro_textbox {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.intro_textbox h1 {
+  font-weight: 300;
+  font-size: 3.5em;
+  color: #FFF;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+iframe {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mission.js */
+
+.mission_container {
+  padding-top: 2em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mission_background_1 {
+  display: block;
+  width: 230px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  top: 820px;
+}
+
+.mission_textbox {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.rect {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #01c9F0;
+  margin: 0 auto;
+  margin-top: -3em;
+  margin-bottom: 1.5em;
+}
+
+.mission_textbox h1 {
+  font-weight: 300;
+  font-size: 3.5em;
+  color: #444444;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.mission_textbox p {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #444444;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.mission_background_2 {
+  display: block;
+  width: 240px;
+  height: 295px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+  position: absolute;
+  right: 0px;
+  top: 1150px;
+}
