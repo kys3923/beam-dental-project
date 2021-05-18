@@ -13,7 +13,7 @@ ul {
 }
 
 .body {
-  min-width: 400px;
+  min-width: 320px;
   width: auto;
 }
 
@@ -23,7 +23,7 @@ header {
   height: 88px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -31,14 +31,14 @@ nav {
   width: 65%;
 }
 
-header nav ul {
+.nav_options {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-header nav ul li {
+.option {
   display: inline-block;
   font-weight: 700;
   font-size: 16px;
@@ -224,6 +224,7 @@ iframe {
 
 .leadership_card {
   width: 16%;
+  min-width: 200px;
   padding: 30px;
   border-radius: 18px;
   text-align: center;
@@ -287,7 +288,12 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 4em;
+}
+
+.investors_logobox img {
   margin-bottom: 4em;
 }
 
@@ -297,7 +303,7 @@ iframe {
   margin: 0 auto;
   margin-top: 3.5em;
   margin-bottom: 4em;
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -317,4 +323,75 @@ iframe {
   font-weight: 400;
   color: #666;
   padding-bottom: 5px;
+}
+
+/* responsive header */
+
+.hamburger_menu {
+  display: none;
+}
+
+.menu_icon {
+  font-size: 2.5em;
+  position: relative;
+  top: 4px;
+  right: -88%;
+  color: #01c9F0;
+}
+
+
+/* tablet 768-1280, mobile 320-768 */
+/* TODO:courved div height, intro font color investor image, footer rearrange  */
+@media screen and (max-width: 1280px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .hamburger_menu {
+    display: block;
+  }
+
+  .nav_options {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 88px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+  }
+
+  .nav_options.active {
+    background: #ffffff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    align-content: center;
+  }
+
+  .nav_options.active li {
+    font-size: 1.5em;
+  }
+
+  .header_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25%;
+  }
+
+  .login_box {
+    margin-top: 15px;
+  }
+
+  header img {
+    position: absolute;
+    left: 45%;
+  }
+  nav {
+    width: 100%;
+  }
 }
